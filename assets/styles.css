@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    margin-left: 10px;
+    margin-right: 25px;
+    padding-top: 10px;
+    height: 42px;
+}
+#logo img{
+    width: 40px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+nav a{
+    padding: 0px 20px;
+}
+nav a:hover{
+    color: crimson;
+}
+main{
+    width: 100vw;
+    height: calc(100vh - 42px);
+}
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    background: crimson;
+}
+#glass-card{
+    width: 80vw;
+    height: 400px;
+    background: rgba( 255, 255, 255, 0.85 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    /* border-radius: 10; */
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#glass-card img{
+    width: 300px;
+    border-radius: 50%;
+    border: 15px solid #fff;
+    margin-right: 40px;
+    transition: 1s ease-out;
+}
+#glass-card img:hover{
+    transform: scale(1.1);
+    transition: .6s;
+}
+#nome{
+    margin-top: 50px;
+    align-self: flex-start;
+}
+#nome h1{
+    font-size: 3em;
+}
+#nome h1 span{
+    color: crimson;
+}
+#nome h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+#nome p{
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+#ver-projetos{
+    text-transform: uppercase;
+    background-color: crimson;
+    padding: 10px;
+    margin-right: 25px;
+    transition: 1s ease-out;
+}
+#ver-projetos:hover{
+    color: #fff;
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+#cv{
+    transition: 1s ease-out;
+}
+#cv:hover{
+    color: crimson;
+    transform: scale(1.1);
+    transition: .5s ease-in;
+}

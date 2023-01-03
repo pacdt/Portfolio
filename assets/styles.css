@@ -37,26 +37,27 @@ section{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding-top: 100px;
     background: crimson;
 }
 #glass-card{
-    width: 80vw;
+    width: 85vw;
     height: 400px;
     background: rgba( 255, 255, 255, 0.85 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 7.5px );
     -webkit-backdrop-filter: blur( 7.5px );
-    /* border-radius: 10; */
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 20px;
+    border-radius: 200px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 #glass-card img{
-    width: 300px;
+    width: 250px;
     border-radius: 50%;
     border: 15px solid #fff;
     margin-right: 40px;
@@ -67,11 +68,12 @@ section{
     transition: .6s;
 }
 #nome{
-    margin-top: 50px;
+    margin-top: 40px;
     align-self: flex-start;
+    line-height: 2.3em;
 }
 #nome h1{
-    font-size: 3em;
+    font-size: 2.5em;
 }
 #nome h1 span{
     color: crimson;
@@ -103,4 +105,31 @@ section{
     color: crimson;
     transform: scale(1.1);
     transition: .5s ease-in;
+}
+#tecnologias{
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#tecs{
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.tec-card{
+    background: rgba( 255, 255, 255, 0.85 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px;
+    width: 150px;
+}
+.tec-card img{
+    width: 50px;
+}
+.tec-card p{
+    display: inline;
 }
